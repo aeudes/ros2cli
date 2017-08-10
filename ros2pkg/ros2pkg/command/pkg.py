@@ -29,6 +29,5 @@ class PkgCommand(CommandExtension):
         # the attribute should always exist
         # otherwise argparse should have exited
         extension = getattr(args, '_verb')
-
         # call the verb's main method
         return extension.main(args=args)
